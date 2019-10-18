@@ -7658,6 +7658,25 @@ html {
 }
 
 /*==========  user style  ==========*/
+body {
+  font-family: 'Roboto Slab', serif;
+  background: #333 url("../img/pattern-body.jpg");
+  color: #fff;
+}
+
+h1, h2, h3 {
+  font-family: 'Pacifico', cursive;
+}
+
+p {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.section-page_title {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 900;
+}
+
 a {
   transition: .3s;
 }
@@ -7682,6 +7701,246 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.btn {
+  color: #fdbc2c;
+  border: 2px solid #fdbc2c;
+  padding: 10px 55px;
+  text-transform: uppercase;
+  font-family: 'Fira Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: inline-block;
+}
+
+.btn:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  background-color: #9c361c;
+  opacity: 0;
+  transition: .5s;
+  transition-delay: .1s;
+  height: 100%;
+  left: 40%;
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:hover:after {
+  opacity: 1;
+  height: 580%;
+  width: 116%;
+  left: 50%;
+}
+
+.btn_transparent {
+  background-color: transparent;
+}
+
+.btn_yellow {
+  background-color: #fdbc2c;
+  color: #000;
+}
+
+.btn_black {
+  background-color: #000;
+  border-color: #000;
+}
+
+.slider__item {
+  background-image: url("../img/slider.jpg");
+  height: 110vh;
+  background-size: cover;
+  text-align: center;
+  position: relative;
+  padding-top: 5em;
+}
+
+.slider__item:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider__item_header {
+  color: #fdbc2c;
+  font-size: 80px;
+}
+
+.slider__item_description {
+  color: #fff;
+  font-size: 24px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+}
+
+.header {
+  background-color: #151515;
+}
+
+.header .logo {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  align-self: center;
+}
+
+.header .menu {
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none 0;
+  padding: 20px 0;
+  cursor: pointer;
+}
+
+.header .menu .fa {
+  color: #fff;
+  font-size: 54px;
+}
+
+.header__contact {
+  background-color: #fdbc2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.header__contact .fa {
+  font-size: 36px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.section-page {
+  padding: 120px 0;
+}
+
+.section-page_desc_wrap {
+  text-align: center;
+}
+
+.section-page_title {
+  color: #fdbc2c;
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+.section-page_description {
+  line-height: 1.5;
+  font-family: 'Roboto Slab', serif;
+  margin-bottom: 0.5em;
+}
+
+.advantages {
+  padding: 40px 0;
+}
+
+.advantages__icon .fa {
+  font-size: 60px;
+  color: #D94F2B;
+}
+
+.advantages__title {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 36px;
+  padding: 15px 0;
+  color: #fdbc2c;
+}
+
+.advantages__description {
+  font-family: 'Roboto Slab', serif;
+}
+
+.popular-product {
+  background: #D94F2B url("../img/pattern-2.png");
+}
+
+.product__item {
+  position: relative;
+  margin: -100px 0;
+  align-items: center;
+}
+
+.product__img {
+  position: relative;
+}
+
+.product__title {
+  font-size: 52px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.product__price {
+  font-size: 22px;
+  color: #fdbc2c;
+}
+
+.product__description {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1.6;
+}
+
+.menu-product__item {
+  text-align: center;
+  transition: .3s;
+  border: 4px solid transparent;
+}
+
+.menu-product__item:hover {
+  border-color: #fdbc2c;
+}
+
+.menu-product__item:hover .btn-hover-show {
+  opacity: 1;
+}
+
+.menu-product__img {
+  padding: 10px;
+}
+
+.menu-product__img img {
+  width: 100%;
+}
+
+.menu-product__title {
+  color: #fdbc2c;
+  font-size: 25px;
+}
+
+.menu-product__description {
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.menu-product__price {
+  color: #D94F2B;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+}
+
+.btn-hover-show {
+  opacity: 0;
+  margin-bottom: 10px;
+  transition: .3s;
 }
 
 /*==========  user style  ==========*/
