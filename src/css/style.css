@@ -7662,6 +7662,7 @@ body {
   font-family: 'Roboto Slab', serif;
   background: #333 url("../img/pattern-body.jpg");
   color: #fff;
+  position: relative;
 }
 
 h1, h2, h3 {
@@ -7806,6 +7807,11 @@ ul {
   outline: none 0;
   padding: 20px 0;
   cursor: pointer;
+  transition: .3s;
+}
+
+.header .menu:hover {
+  background-color: #fdbc2c;
 }
 
 .header .menu .fa {
@@ -7819,6 +7825,18 @@ ul {
   align-items: center;
   justify-content: center;
   height: 100%;
+  transition: .3s;
+}
+
+.header__contact a {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.header__contact:hover {
+  background-color: #000;
 }
 
 .header__contact .fa {
@@ -7901,6 +7919,7 @@ ul {
   text-align: center;
   transition: .3s;
   border: 4px solid transparent;
+  margin-bottom: 40px;
 }
 
 .menu-product__item:hover {
@@ -7941,6 +7960,272 @@ ul {
   opacity: 0;
   margin-bottom: 10px;
   transition: .3s;
+}
+
+.t-a-c {
+  text-align: center;
+}
+
+.list-progress {
+  background: url("../img/bg-1.jpg") no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+}
+
+.list-progress:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.list-progress .progress__item {
+  text-align: center;
+  border-radius: 50%;
+  border: 4px solid #D94F2B;
+  max-width: 158px;
+  max-height: 158px;
+  height: 158px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.list-progress .progress__count {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 90px;
+  font-family: 'Pacifico', cursive;
+  line-height: 1;
+}
+
+.list-progress .progress__title {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.reviews {
+  text-align: center;
+}
+
+.reviews__img {
+  padding: 0 80px;
+}
+
+.reviews__img img {
+  width: 100%;
+}
+
+.reviews__title_product {
+  text-align: center;
+  color: #fdbc2c;
+  font-size: 26px;
+}
+
+.reviews__content {
+  position: relative;
+  border: 4px solid #D94F2B;
+  padding: 25px 20px;
+  margin: 30px 0 20px;
+}
+
+.reviews__content:before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  transform: translateX(-50%) rotate(45deg);
+  border: 4px solid #D94F2B;
+  top: -17px;
+  background: #333 url("../img/pattern-body.jpg");
+}
+
+.reviews__content__text {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 0;
+}
+
+.reviews__author {
+  font-size: 26px;
+}
+
+.instagram {
+  padding-bottm: 60px;
+}
+
+.instagram__inner {
+  margin-bottom: 30px;
+}
+
+.instagram__img img {
+  width: 100%;
+}
+
+.instagram .carousel__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram .carousel__nav__title {
+  flex-basis: 70%;
+  padding: 20px;
+  height: 64px;
+}
+
+.instagram .carousel__nav__title p {
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+.instagram .carousel__nav_prev {
+  padding: 20px;
+  line-height: 1;
+  height: 64px;
+  margin-right: -4px;
+  color: #D94F2B;
+}
+
+.instagram .carousel__nav_next {
+  padding: 20px;
+  line-height: 1;
+  height: 64px;
+  margin-left: -4px;
+  color: #D94F2B;
+}
+
+.instagram .border-decoration {
+  border: 4px solid #D94F2B;
+}
+
+.footer-page__address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-page .address__phone {
+  font-size: 70px;
+  font-weight: bold;
+  color: #D94F2B;
+  line-height: 1.1;
+}
+
+.footer-page .address__mail {
+  font-size: 40px;
+  color: #D94F2B;
+  line-height: 1.1;
+}
+
+.decor-2 {
+  height: 50px;
+  padding-top: 9px;
+  font: 24px 'Fredericka the Great';
+  background: url("../img/decor-2.png") no-repeat 50% 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer-page {
+  padding: 100px 0 50px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.social__item a {
+  color: #fff;
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  font-weight: 300;
+}
+
+.copyright {
+  text-align: center;
+  background-color: #000;
+  padding: 30px 0 20px;
+  font-size: 13px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 35px;
+}
+
+.navigation__wrapper {
+  width: 400px;
+  position: fixed;
+  left: -400px;
+  height: 100%;
+  background-color: #222222;
+  z-index: 9999;
+  top: 0;
+  transition: .5s;
+  padding: 50px 30px 20px;
+}
+
+.navigation__wrapper:focus {
+  outline: 0 none;
+}
+
+.navigation__logo {
+  text-align: center;
+}
+
+.navigation__link {
+  color: #fff;
+  transition: .3s;
+}
+
+.navigation__link:hover {
+  color: #fdbc2c;
+}
+
+.stiky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 5555;
+}
+
+.social-menu .social__item:hover a {
+  color: #fdbc2c;
+}
+
+.social-menu .social__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.show-menu {
+  left: 0;
+}
+
+.bcg-opacity:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1111;
 }
 
 /*==========  user style  ==========*/

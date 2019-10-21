@@ -8,6 +8,7 @@ body
 	font-family: 'Roboto Slab', serif
 	background: #333 url('../img/pattern-body.jpg')
 	color: #fff
+	position: relative
 h1, h2,h3
 	font-family: 'Pacifico', cursive
 p
@@ -115,6 +116,9 @@ ul
 		outline: none 0
 		padding: 20px 0
 		cursor: pointer
+		transition: .3s
+		&:hover
+			background-color: #fdbc2c
 		.fa
 			color: #fff
 			font-size: 54px
@@ -125,6 +129,14 @@ ul
 		align-items: center
 		justify-content: center
 		height: 100%
+		transition: .3s
+		a
+			width: 100%
+			height: 100%
+			text-align: center
+			padding: 30px 0
+		&:hover
+			background-color: #000
 		.fa
 			font-size: 36px
 			color: #fff
@@ -194,6 +206,7 @@ ul
 		text-align: center
 		transition: .3s
 		border: 4px solid transparent
+		margin-bottom: 40px
 		&:hover
 			border-color: #fdbc2c
 			& .btn-hover-show
@@ -223,6 +236,234 @@ ul
 	opacity: 0
 	margin-bottom: 10px
 	transition: .3s
+
+.t-a-c
+	text-align: center
+
+.list-progress
+	background: url('../img/bg-1.jpg') no-repeat
+	background-position: 50% 50%
+	position: relative
+	&:before
+		position: absolute
+		content: ''
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		background-color: rgba(0,0,0,.3)
+
+	.progress
+
+		&__item
+			text-align: center
+			border-radius: 50%
+			border: 4px solid #D94F2B
+			max-width: 158px
+			max-height: 158px
+			height: 158px
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+
+		&__count
+			font-weight: 900
+			text-transform: uppercase
+			font-size: 90px
+			font-family: 'Pacifico', cursive
+			line-height: 1
+
+		&__title
+			font-family: 'Fira Sans', sans-serif
+
+.reviews
+	text-align: center
+
+	&__item
+
+	&__inner
+
+	&__img
+		padding: 0 80px
+		img
+			width: 100%
+
+	&__title_product
+		text-align: center
+		color: #fdbc2c
+		font-size: 26px
+
+	&__content
+		position: relative
+		border: 4px solid #D94F2B
+		padding: 25px 20px
+		margin: 30px 0 20px
+		&:before
+			position: absolute
+			content: ''
+			left: 50%
+			width: 30px
+			height: 30px
+			transform: translateX(-50%) rotate(45deg)
+			border: 4px solid #D94F2B
+			top: -17px
+			background: #333 url('../img/pattern-body.jpg')
+
+		&__text
+			font-size: 20px
+			line-height: 1.3
+			margin-bottom: 0
+		
+	&__author
+		font-size: 26px
+
+.instagram
+	padding-bottm: 60px
+
+	&__inner
+		margin-bottom: 30px
+
+	&__img
+		img
+			width: 100%
+
+	.carousel__nav
+		display: flex
+		justify-content: center
+		align-items: center
+
+		&__title
+			flex-basis: 70%
+			padding: 20px
+			height: 64px
+			p
+				margin: 0
+				text-align: center
+				line-height: 1
+
+		&_prev
+			padding: 20px
+			line-height: 1
+			height: 64px
+			margin-right: -4px
+			color: #D94F2B
+		
+		&_next
+			padding: 20px
+			line-height: 1
+			height: 64px
+			margin-left: -4px
+			color: #D94F2B
+
+	.border-decoration
+		border: 4px solid #D94F2B
+		
+.footer-page
+
+	&__address
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
+	.address__phone
+		font-size: 70px
+		font-weight: bold
+		color: #D94F2B
+		line-height: 1.1
+
+	.address__mail
+		font-size: 40px
+		color: #D94F2B
+		line-height: 1.1
+
+.decor-2
+	height: 50px
+	padding-top: 9px
+	font: 24px 'Fredericka the Great'
+	background: url('../img/decor-2.png') no-repeat 50% 0
+	text-align: center
+	margin-top: 50px
+
+
+.footer-page
+	padding: 100px 0 50px
+
+.social
+	display: flex
+	justify-content: center
+	margin-top: 35px
+
+	&__item
+		&:not(:last-child)
+			margin-right: 45px
+		a
+			color: #fff
+			font-size: 30px
+			font-family: 'Pacifico', cursive
+			font-weight: 300
+
+
+.copyright
+	text-align: center
+	background-color: #000
+	padding: 30px 0 20px
+	font-size: 13px
+
+.navigation
+	display: flex
+	flex-direction: column
+	font-size: 35px
+	align-items: center
+	justify-content: flex-start
+	margin-top: 35px
+	
+	&__wrapper
+		width: 400px
+		position: fixed
+		left: -400px
+		height: 100%
+		background-color: #222222
+		z-index: 9999
+		top: 0
+		transition: .5s
+		padding: 50px 30px 20px
+		&:focus
+			outline: 0 none
+	
+	&__logo
+		text-align: center
+
+	&__link
+		color: #fff
+		transition: .3s
+		&:hover
+			color: #fdbc2c
+.stiky-nav
+	position: sticky
+	top: 0
+	z-index: 5555
+.social-menu
+	.social__item
+		&:hover a
+			color: #fdbc2c
+		&:not(:last-child)
+			margin-right: 20px
+
+.show-menu
+	left: 0
+
+.bcg-opacity
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background-color: rgba(0,0,0,.6)
+		z-index: 1111
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end
