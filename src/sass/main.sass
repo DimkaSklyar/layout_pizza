@@ -176,17 +176,21 @@ ul
 
 
 .popular-product
-	background: #D94F2B url('../img/pattern-2.png')
+	background: url(../img/pattern-2.png),url(../img/pattern-2.png),linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(217,79,43,1) 15%, rgba(217,79,43,1) 50%, rgba(217,79,43,1) 85%, rgba(255,255,255,0) 85%)
+	background-repeat: repeat-x
+	background-size: 18%
+	background-position: 0 25%, 75% 79%
 	
 .product
 
 	&__item
 		position: relative
-		margin: -100px 0
 		align-items: center
 
 	&__img
 		position: relative
+		img
+			width: 100%
 
 	&__title
 		font-size: 52px
@@ -219,12 +223,13 @@ ul
 
 	&__title
 		color: #fdbc2c
-		font-size: 25px
+		font-size: 24px
+
 	
 	&__description
 		font-family: 'Roboto Slab', serif
 		font-size: 13px
-		padding: 10px
+		padding: 7px
 		margin-bottom: 0
 
 	&__price
@@ -244,6 +249,8 @@ ul
 	background: url('../img/bg-1.jpg') no-repeat
 	background-position: 50% 50%
 	position: relative
+	background-size: cover
+	padding: 40px 0
 	&:before
 		position: absolute
 		content: ''
@@ -266,6 +273,7 @@ ul
 			justify-content: center
 			align-items: center
 			flex-direction: column
+			text-align: center
 
 		&__count
 			font-weight: 900
@@ -273,9 +281,14 @@ ul
 			font-size: 90px
 			font-family: 'Pacifico', cursive
 			line-height: 1
+			span
+				padding-bottom: 23px
 
 		&__title
 			font-family: 'Fira Sans', sans-serif
+			text-align: center
+			margin-top: 20px
+			color: #fdbc2c
 
 .reviews
 	text-align: center
@@ -319,7 +332,6 @@ ul
 		font-size: 26px
 
 .instagram
-	padding-bottm: 60px
 
 	&__inner
 		margin-bottom: 30px
@@ -341,6 +353,8 @@ ul
 				margin: 0
 				text-align: center
 				line-height: 1
+			span
+				color: #fdbc2c
 
 		&_prev
 			padding: 20px
@@ -425,7 +439,7 @@ ul
 		left: -400px
 		height: 100%
 		background-color: #222222
-		z-index: 9999
+		z-index: 100
 		top: 0
 		transition: .5s
 		padding: 50px 30px 20px
@@ -443,7 +457,7 @@ ul
 .stiky-nav
 	position: sticky
 	top: 0
-	z-index: 5555
+	z-index: 555
 .social-menu
 	.social__item
 		&:hover a
@@ -463,7 +477,92 @@ ul
 		right: 0
 		bottom: 0
 		background-color: rgba(0,0,0,.6)
-		z-index: 1111
+		z-index: 111
+
+
+.fix-section-padding-bottom
+	padding: 120px 0 20px
+
+.fix-section-padding-top
+	padding: 40px 0 120px
 /*==========  user style  ==========*/
+
+
+
+.slick-slide
+	&:focus
+		outline: none 0
+
+
+.slick-next:before,
+.slick-prev:before 
+	font-family: "FontAwesome"
+	font-size: 20px
+	line-height: 1
+	color: #fff
+	opacity: .75
+	-webkit-font-smoothing: antialiased
+.slick-next:before
+	content: '\f061'
+.slick-prev:before
+	content: '\f060'
+
+.slick-next,
+.slick-prev
+	border: 4px solid #fff
+	height: 55px
+	width: 55px
+
+.slick-prev
+	left: -70px
+.slick-next
+	right: -50px
+
+.reviews
+	.slick-next,
+	.slick-prev
+		border: 4px solid #d94f2b
+		height: 55px
+		width: 55px
+		bottom: -20%
+		top: auto
+	.slick-prev
+		left: 45%
+	.slick-next
+		right: 45%
+
+
+.instagram .slick-initialized .slick-slide
+	padding: 0
+
+img.mfp-img
+	background: #fff
+	padding: 20px 20px 60px
+
+.mfp-counter
+	right: 20px
+.mfp-title
+	padding-left: 20px
+	padding-right: 0
+.mfp-figure small,
+.mfp-counter
+	color: #000
+.mfp-figure small
+	line-height: 18px
+
+.instagram
+	.slick-next
+		top: auto
+		bottom: -126px
+		right: 154px
+	.slick-prev
+		top: auto
+		bottom: -126px
+		left: 154px
+	.slick-next,
+	.slick-prev
+		width: 64px
+		height: 64px
+		border-color: #d94f2b
 
 @import "media" // Always at the end
