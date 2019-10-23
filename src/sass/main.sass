@@ -417,6 +417,8 @@ ul
 			font-size: 30px
 			font-family: 'Pacifico', cursive
 			font-weight: 300
+			&:hover
+				color: #fdbc2c
 
 
 .copyright
@@ -526,6 +528,12 @@ ul
 		width: 55px
 		bottom: -20%
 		top: auto
+		&:before
+			color: #d94f2b
+			transition: .3s
+		&:hover
+			&:before
+				color: #fff
 	.slick-prev
 		left: 45%
 	.slick-next
@@ -564,5 +572,11 @@ img.mfp-img
 		width: 64px
 		height: 64px
 		border-color: #d94f2b
+		&:before
+			color: #d94f2b
+			transition: .3s
+		&:hover
+			&:before
+				color: #fff
 
 @import "media" // Always at the end

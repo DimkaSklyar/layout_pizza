@@ -8446,6 +8446,10 @@ ul {
   font-weight: 300;
 }
 
+.social__item a:hover {
+  color: #fdbc2c;
+}
+
 .copyright {
   text-align: center;
   background-color: #000;
@@ -8575,6 +8579,17 @@ ul {
   top: auto;
 }
 
+.reviews .slick-next:before,
+  .reviews .slick-prev:before {
+  color: #d94f2b;
+  transition: .3s;
+}
+
+.reviews .slick-next:hover:before,
+  .reviews .slick-prev:hover:before {
+  color: #fff;
+}
+
 .reviews .slick-prev {
   left: 45%;
 }
@@ -8627,6 +8642,17 @@ img.mfp-img {
   width: 64px;
   height: 64px;
   border-color: #d94f2b;
+}
+
+.instagram .slick-next:before,
+  .instagram .slick-prev:before {
+  color: #d94f2b;
+  transition: .3s;
+}
+
+.instagram .slick-next:hover:before,
+  .instagram .slick-prev:hover:before {
+  color: #fff;
 }
 
 /*==========  Desktop First  ==========*/
