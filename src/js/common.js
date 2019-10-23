@@ -62,9 +62,9 @@ $(document).ready(function () {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1199,
         settings: {
-          slidesToShow: 7,
+          slidesToShow: 5,
           slidesToScroll: 1,
           infinite: true,
 
@@ -104,7 +104,7 @@ $(document).ready(function () {
       image: {
         tError: '<a href="%url%">Изображение #%curr%</a> не загруженно.',
         titleSrc: function(item) {
-          return '<small>Автор фотографии: Пицца РИЯ.</small>';
+          return '<small>Автор фотографии: @pizza_riya</small>';
         }
       }
     });
