@@ -195,15 +195,26 @@ ul
 		background-repeat: repeat-x
 		background-size: 18%
 		background-position: 0 25%,75% 61%
+	+media-breakpoint-down(md)
+		background: #d94f2b url(../img/pattern-2.png)
+		background-repeat: repeat
+		background-position: 50%
 	
 .product
 
 	&__item
 		position: relative
 		align-items: center
+		+media-breakpoint-down(md)
+			text-align: center
+			padding-bottom: 25px
 
 	&__img
 		position: relative
+		+media-breakpoint-down(md)
+			padding: 25px 75px
+		+media-breakpoint-down(sm)
+			padding: 25px
 		img
 			width: 100%
 
@@ -221,6 +232,8 @@ ul
 		line-height: 1.6
 		+media-breakpoint-down(lg)
 			font-size: 14px
+		+media-breakpoint-down(md)
+			font-size: 16px
 
 
 .menu-product
@@ -239,10 +252,16 @@ ul
 		padding: 10px
 		img
 			width: 100%
+			+media-breakpoint-down(md)
+				width: 50%
+			+media-breakpoint-down(sm)
+				width: 100%
 
 	&__title
 		color: #fdbc2c
 		font-size: 24px
+		+media-breakpoint-down(md)
+			font-size: 30px
 
 	
 	&__description
@@ -250,6 +269,8 @@ ul
 		font-size: 13px
 		padding: 7px
 		margin-bottom: 0
+		+media-breakpoint-down(md)
+			font-size: 16px
 
 	&__price
 		color: #D94F2B
@@ -260,6 +281,8 @@ ul
 	opacity: 0
 	margin-bottom: 10px
 	transition: .3s
+	+media-breakpoint-down(md)
+		opacity: 1
 
 .t-a-c
 	text-align: center
@@ -324,6 +347,11 @@ ul
 			padding: 0 50px
 		img
 			width: 100%
+			+media-breakpoint-down(md)
+				width: 50%
+				margin: 0 auto
+			+media-breakpoint-down(sm)
+				width: 100%
 
 	&__title_product
 		text-align: center
@@ -411,11 +439,15 @@ ul
 		font-weight: bold
 		color: #D94F2B
 		line-height: 1.1
+		+media-breakpoint-down(sm)
+			font-size: 42px
 
 	.address__mail
 		font-size: 40px
 		color: #D94F2B
 		line-height: 1.1
+		+media-breakpoint-down(sm)
+			font-size: 32px
 
 .decor-2
 	height: 50px
@@ -433,15 +465,23 @@ ul
 	display: flex
 	justify-content: center
 	margin-top: 35px
+	+media-breakpoint-down(md)
+		flex-direction: column
+		text-align: center
 
 	&__item
 		&:not(:last-child)
 			margin-right: 45px
+			+media-breakpoint-down(md)
+				margin: 0
+				margin-bottom: 20px
 		a
 			color: #fff
 			font-size: 30px
 			font-family: 'Pacifico', cursive
 			font-weight: 300
+			+media-breakpoint-down(md)
+				font-size: 36px
 			&:hover
 				color: #fdbc2c
 
@@ -472,6 +512,10 @@ ul
 		padding: 50px 30px 20px
 		&:focus
 			outline: 0 none
+		+media-breakpoint-down(sm)
+			width: 100%
+			left: -100%
+			padding: 10px 30px 20px
 	
 	&__logo
 		text-align: center
@@ -485,15 +529,28 @@ ul
 	position: sticky
 	top: 0
 	z-index: 555
+	+media-breakpoint-down(sm)
+		position: fixed
+		width: 100%
 .social-menu
+	+media-breakpoint-down(sm)
+		flex-direction: row
 	.social__item
 		&:hover a
 			color: #fdbc2c
 		&:not(:last-child)
 			margin-right: 20px
-
+.close-btn-menu
+	border: none
+	outline: none 0
+	background: none
+	cursor: pointer
+	color: #fff
+	font-size: 42px
 .show-menu
 	left: 0
+	+media-breakpoint-down(sm)
+		left: 0%
 
 .bcg-opacity
 	&:before
@@ -545,10 +602,14 @@ ul
 	left: -70px
 	+media-breakpoint-down(lg)
 		left: 20px
+	+media-breakpoint-down(md)
+		left: 0
 .slick-next
 	right: -50px
 	+media-breakpoint-down(lg)
 		right: 10px
+	+media-breakpoint-down(md)
+		right: 0
 
 .reviews
 	.slick-next,
@@ -568,10 +629,18 @@ ul
 		left: 45%
 		+media-breakpoint-down(lg)
 			left: 43%
+		+media-breakpoint-down(md)
+			left: 41%
+		+media-breakpoint-down(sm)
+			left: 35%
 	.slick-next
 		right: 45%
 		+media-breakpoint-down(lg)
 			right: 43%
+		+media-breakpoint-down(md)
+			right: 41%
+		+media-breakpoint-down(sm)
+			right: 35%
 
 
 .instagram .slick-initialized .slick-slide
@@ -597,10 +666,18 @@ img.mfp-img
 		top: auto
 		bottom: -126px
 		right: 154px
+		+media-breakpoint-down(md)
+			right: 117px
+		+media-breakpoint-down(sm)
+			right: 3px
 	.slick-prev
 		top: auto
 		bottom: -126px
 		left: 154px
+		+media-breakpoint-down(md)
+			left: 117px
+		+media-breakpoint-down(sm)
+			left: 3px
 	.slick-next,
 	.slick-prev
 		width: 64px
