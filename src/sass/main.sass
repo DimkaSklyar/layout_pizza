@@ -44,6 +44,7 @@ ul
 	overflow: hidden
 	z-index: 1
 	display: inline-block
+	cursor: pointer
 	&:after
 		content: ''
 		z-index: -1
@@ -189,12 +190,12 @@ ul
 	background: url(../img/pattern-2.png),url(../img/pattern-2.png),linear-gradient(180deg, rgba(255,255,255,0) 15%, rgba(217,79,43,1) 15%, rgba(217,79,43,1) 50%, rgba(217,79,43,1) 85%, rgba(255,255,255,0) 85%)
 	background-repeat: repeat-x
 	background-size: 18%
-	background-position: 0 25%, 75% 79%
+	background-position: 0 29%, 75% 79%
 	+media-breakpoint-down(lg)
 		background: url(../img/pattern-2.png),url(../img/pattern-2.png),linear-gradient(180deg,rgba(255,255,255,0) 10%,#d94f2b 10%,#d94f2b 42%,#d94f2b 90%,rgba(255,255,255,0) 90%)
 		background-repeat: repeat-x
 		background-size: 18%
-		background-position: 0 25%,75% 61%
+		background-position: 0 29%,75% 61%
 	+media-breakpoint-down(md)
 		background: #d94f2b url(../img/pattern-2.png)
 		background-repeat: repeat
@@ -690,4 +691,52 @@ img.mfp-img
 			&:before
 				color: #fff
 
+
+
+.cart
+	display: flex
+	flex-direction: column
+	font-size: 35px
+	align-items: center
+	justify-content: flex-start
+	margin-top: 35px
+	
+	&__wrapper
+		width: 400px
+		position: fixed
+		right: -400px
+		height: 100%
+		background-color: #222222
+		z-index: 100
+		top: 0
+		transition: .5s
+		padding: 50px 30px 20px
+		&:focus
+			outline: 0 none
+		+media-breakpoint-down(sm)
+			width: 100%
+			left: -100%
+			padding: 10px 30px 20px
+	
+	&__logo
+		text-align: center
+
+	&__link
+		color: #fff
+		transition: .3s
+		&:hover
+			color: #fdbc2c
+
+
+.close-btn-menu
+	border: none
+	outline: none 0
+	background: none
+	cursor: pointer
+	color: #fff
+	font-size: 42px
+.show-order
+	right: 0
+	+media-breakpoint-down(sm)
+		left: 0%
 @import "media" // Always at the end
