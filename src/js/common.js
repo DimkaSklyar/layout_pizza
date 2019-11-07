@@ -1,3 +1,39 @@
+function AjaxFormRequest(result_id, formMain, url) {
+  jQuery.ajax({
+    url: url,
+    type: "POST",
+    dataType: "html",
+    data: jQuery("#" + formMain).serialize(),
+    success: function (response) {
+      $(':input', '#' + formMain)
+        .not(':button, :submit, :reset, :hidden')
+        .val('')
+        .removeAttr('checked')
+        .removeAttr('selected');
+      setTimeout(() => {
+        $("#message").hide();
+      }, 5000);
+    },
+    error: function (response) {
+      var par = document.getElementById(result_id);
+      var error = document.createElement('p');
+      error.classList.add("mt-3");
+      error.innerHTML = "Возникла ошибка при отправке формы.";
+      par.appendChild(error);
+      setTimeout(func, 700);
+    }
+  });
+}
+
+function func() {
+  $("p.mt-3").detach();
+}
+$('#form-orderes').submit(function (e) {
+  e.preventDefault();
+  AjaxFormRequest('messegeResult-order', 'form-orderes', './order.php');
+});
+
+
 $(document).ready(function () {
 
   $('.menu').click(function (e) { 
@@ -14,19 +50,21 @@ $(document).ready(function () {
   });
 
 
-  
   $('[href="#order-popup"]').click(function (e) { 
     e.preventDefault();
-      $(".cart__wrapper").toggleClass('show-order');
-      $(".cart__wrapper").focus();
-      $("body").toggleClass('bcg-opacity');
+    $("body").append('<div class="bcg-opacity-order"></div>');
+    $(".cart__wrapper").addClass('show-order');
   });
 
-  $(".cart__wrapper").blur(function (e) { 
-    e.preventDefault();
-    $(".cart__wrapper").toggleClass('show-order');
-    $("body").toggleClass('bcg-opacity');
+  $(document).on('click','.bcg-opacity-order',function(){
+      $(".cart__wrapper").removeClass('show-order');
+      $(".bcg-opacity-order").remove();
   });
+$(".cart__wrapper > .close-btn-menu").click(function (e) { 
+  $(".cart__wrapper").removeClass('show-order');
+  $(".bcg-opacity-order").remove();
+  
+});
 
   $('.slick-popular-product').slick();
 

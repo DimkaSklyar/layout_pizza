@@ -9,7 +9,7 @@
 	<link
 		href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Pacifico|Roboto+Slab:300,400,700&display=swap&subset=cyrillic"
 		rel="stylesheet">
-		<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="icon" type="image/png" href="favicon.png" />
 	<title>Пицца Рия</title>
 </head>
 
@@ -28,6 +28,26 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="cart__wrapper__contaner">
+		<div class="cart__wrapper" tabindex="0">
+			<button class="close-btn-menu d-sm-block d-md-none"><i class="fa fa-times" aria-hidden="true"></i></button>
+			<a href="#">
+				<div class="logo_img navigation__logo">
+					<img src="img/logo.png" alt="">
+				</div>
+			</a>
+			<h1>Оформление заказа</h1>
+			<p>Пожалйста заполните форму заказа, и мы сразу вам перезвоним, чтобы уточнить ваш заказ.</p>
+			<form id="form-orderes">
+				<input type="text" name="name" id="name" class="input-text" placeholder="Имя" required>
+				<input type="tel" name="tel" id="tel" class="input-text" placeholder="Телефон" required>
+				<textarea name="comment" id="comment" cols="30" rows="6" class="input-text" placeholder="Комментарий..."></textarea>
+				<button type="submit" form="form-orderes" class="btn btn_yellow">Отправить</button>
+			</form>
+			<div id="messegeResult-order"></div>
 		</div>
 	</div>
 
@@ -81,33 +101,6 @@
 				<li class="social__item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
-
-
-		<div class="cart__wrapper" tabindex="0">
-			<button class="close-btn-menu d-sm-block d-md-none"><i class="fa fa-times" aria-hidden="true"></i></button>
-			<a href="#">
-				<div class="logo_img navigation__logo">
-					<img src="img/logo.png" alt="">
-				</div>
-			</a>
-			<h1>Оформление заказа</h1>
-			<p>Пожалйста заполните форму заказа, и мы сразу вам перезвоним, чтобы уточнить некоторые детали.</p>
-			<form action="" method="post">
-				<select name="" id="" multiple>
-					<option value="1">1</option>
-					<option value="2">2</option>
-
-					<option value="3">3</option>
-
-					<option value="4">4</option>
-
-					<option value="6">6</option>
-					<option value="5">5</option>
-
-				</select>
-			</form>
-		</div>
-
 	</header>
 
 	<section class="section-page fix-section-padding-bottom">
@@ -172,7 +165,7 @@
 									aria-hidden="true"></i> 720</p>
 							<p class="product__description">Маринованное филе куриной грудки, лук-шалот, жареный стручковый перец,
 								карамелизированный лук и боккончини на томатной основе, с соусом пери-пери</p>
-							<a class="btn btn_yellow">Заказать</a>
+							<a class="btn btn_yellow" href="#order-popup">Заказать</a>
 						</div>
 						<div class="col-xl-7 col-lg-6 col-12 flex-first flex-lg-last">
 							<div class="product__img">
@@ -189,7 +182,7 @@
 									aria-hidden="true"></i> 650</p>
 							<p class="product__description">Цыпленок медленного приготовления, маринованный в соусе «Булгоги»,
 								лук-шалот на чесночной основе, оливки, саллями, базелик</p>
-							<a class="btn btn_yellow">Заказать</a>
+							<a class="btn btn_yellow" href="#order-popup">Заказать</a>
 						</div>
 						<div class="col-xl-7 col-lg-6 col-12 flex-first flex-lg-last">
 							<div class="product__img">
@@ -206,7 +199,7 @@
 									aria-hidden="true"></i> 690</p>
 							<p class="product__description">Баклажаны на гриле, маринованные артишоки, шпинат, жареный стручковый
 								перец, грибы, сушеные помидоры и боккончини на томатной основе, песто из айоли</p>
-							<a class="btn btn_yellow">Заказать</a>
+							<a class="btn btn_yellow" href="#order-popup">Заказать</a>
 						</div>
 						<div class="col-xl-7 col-lg-6 col-12 flex-first flex-lg-last">
 							<div class="product__img">
@@ -233,7 +226,7 @@
 							шитаке, лук-шалот на чесночной основе, украшенный кимчи, красный и зеленый перец чили</p>
 						<p class="menu-product__price">250 руб.</p>
 						<div class="btn-hover-show">
-							<a href="#" class="btn btn_yellow">Заказать</a>
+							<a href="#order-popup" class="btn btn_yellow">Заказать</a>
 						</div>
 					</div>
 				</li>
@@ -247,7 +240,7 @@
 							специями, помидорами, паприкой, смесью гарбанзос, с ломтиками лимона и йогуртовым соусом</p>
 						<p class="menu-product__price">250 руб.</p>
 						<div class="btn-hover-show">
-							<a href="#" class="btn btn_yellow">Заказать</a>
+							<a href="#order-popup" class="btn btn_yellow">Заказать</a>
 						</div>
 					</div>
 				</li>
@@ -261,7 +254,7 @@
 							основе острой томатной сальсы, подается со свежей сальсой из авокадо, а также фирменый соус</p>
 						<p class="menu-product__price">250 руб.</p>
 						<div class="btn-hover-show">
-							<a href="#" class="btn btn_yellow">Заказать</a>
+							<a href="#order-popup" class="btn btn_yellow">Заказать</a>
 						</div>
 					</div>
 				</li>
@@ -275,7 +268,7 @@
 							томатной основе, украшенный Pico De Gallo, авокадо, кориандром и лаймом, покрытый майонезом Sriracha</p>
 						<p class="menu-product__price">250 руб.</p>
 						<div class="btn-hover-show">
-							<a href="#" class="btn btn_yellow">Заказать</a>
+							<a href="#order-popup" class="btn btn_yellow">Заказать</a>
 						</div>
 					</div>
 				</li>
@@ -408,53 +401,53 @@
 					</a>
 				</li>
 				<li class="col istagram__item">
-						<a href="img/carousel/carusel_2.jpg">
-							<div class="instagram__img">
-								<img src="img/carousel/carusel_2.jpg" alt="">
-							</div>
-						</a>
+					<a href="img/carousel/carusel_2.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_2.jpg" alt="">
+						</div>
+					</a>
 				</li>
 				<li class="col instagram__item">
-						<a href="img/carousel/carusel_3.jpg">
-							<div class="instagram__img">
-								<img src="img/carousel/carusel_3.jpg" alt="">
-							</div>
-						</a>
+					<a href="img/carousel/carusel_3.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_3.jpg" alt="">
+						</div>
+					</a>
 				</li>
 				<li class="col instagram__item">
-						<a href="img/carousel/carusel_4.jpg">
-							<div class="instagram__img">
-								<img src="img/carousel/carusel_4.jpg" alt="">
-							</div>
-						</a>
+					<a href="img/carousel/carusel_4.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_4.jpg" alt="">
+						</div>
+					</a>
 				</li>
 				<li class="col instagram__item">
-						<a href="img/carousel/carusel_5.jpg">
-							<div class="instagram__img">
-								<img src="img/carousel/carusel_5.jpg" alt="">
-							</div>
-						</a>
+					<a href="img/carousel/carusel_5.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_5.jpg" alt="">
+						</div>
+					</a>
 				</li>
 				<li class="col instagram__item">
-						<a href="img/carousel/carusel_6.jpg">
-							<div class="instagram__img">
-								<img src="img/carousel/carusel_6.jpg" alt="">
-							</div>
-						</a>
+					<a href="img/carousel/carusel_6.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_6.jpg" alt="">
+						</div>
+					</a>
 				</li>
 				<li class="col instagram__item">
-						<a href="img/carousel/carusel_7.jpg">
-							<div class="instagram__img">
-								<img src="img/carousel/carusel_7.jpg" alt="">
-							</div>
-						</a>
+					<a href="img/carousel/carusel_7.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_7.jpg" alt="">
+						</div>
+					</a>
 				</li>
 				<li class="col instagram__item">
-						<a href="img/carousel/carusel_8.jpg">
-							<div class="instagram__img">
-								<img src="img/carousel/carusel_8.jpg" alt="">
-							</div>
-						</a>
+					<a href="img/carousel/carusel_8.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_8.jpg" alt="">
+						</div>
+					</a>
 				</li>
 			</ul>
 			<div class="carousel__nav">
