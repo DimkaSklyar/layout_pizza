@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link
+		href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Pacifico|Roboto+Slab:300,400,700&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<title>Пицца Рия</title>
+</head>
+
+<body>
+
+	<div class="cart__wrapper__contaner">
+		<div class="cart__wrapper" tabindex="0">
+			<button class="close-btn-menu d-sm-block d-md-none"><i class="fa fa-times" aria-hidden="true"></i></button>
+			<a href="#">
+				<div class="logo_img navigation__logo">
+					<img src="img/logo.png" alt="">
+				</div>
+			</a>
+			<h1>Оформление заказа</h1>
+			<p>Пожалйста заполните форму заказа, и мы сразу вам перезвоним, чтобы уточнить ваш заказ.</p>
+			<form id="form-orderes">
+				<input type="text" name="name" id="name" class="input-text" placeholder="Имя" required>
+				<input type="tel" name="tel" id="tel" class="input-text" placeholder="Телефон" required>
+				<textarea name="comment" id="comment" cols="30" rows="6" class="input-text"
+					placeholder="Комментарий..."></textarea>
+				<button type="submit" form="form-orderes" class="btn btn_yellow">Отправить</button>
+			</form>
+			<div id="messegeResult-order"></div>
+		</div>
+	</div>
+
+	<header class="header stiky-nav">
+		<div class="header__inner">
+			<div class="row no-gutters justify-content-between">
+				<div class="col-md-1 col-2">
+					<button class="menu">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</button>
+				</div>
+				<div class="col-md-9 col-7 logo">
+					<a href="#">
+						<div class="logo_img">
+							<img src="img/logo.png" alt="">
+						</div>
+					</a>
+				</div>
+				<div class="col-md-1 col-2">
+					<div class="header__contact">
+						<a href="tel:+999999999">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="navigation__wrapper" tabindex="0">
+			<button class="close-btn-menu d-sm-block d-md-none"><i class="fa fa-times" aria-hidden="true"></i></button>
+			<a href="#">
+				<div class="logo_img navigation__logo">
+					<img src="img/logo.png" alt="">
+				</div>
+			</a>
+			<nav>
+				<ul class="navigation">
+					<li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
+					<li class="navigation__item"><a href="about.html" class="navigation__link">О нас</a></li>
+					<li class="navigation__item"><a href="menu.html" class="navigation__link">Меню</a></li>
+					<li class="navigation__item"><a href="#" class="navigation__link">Помощь</a></li>
+					<li class="navigation__item"><a href="#" class="navigation__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="footer-decor decor-2">&</div>
+			<ul class="social social-menu">
+				<li class="social__item"><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
+							aria-hidden="true"></i></a></li>
+				<li class="social__item"><a href="https://vk.com/" target="_blank"><i class="fa fa-vk"
+							aria-hidden="true"></i></a></li>
+				<li class="social__item"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
+							aria-hidden="true"></i></a></li>
+				<li class="social__item"><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"
+							aria-hidden="true"></i></a></li>
+				<li class="social__item"><a href="https://www.pinterest.ru/" target="_blank"><i class="fa fa-pinterest"
+							aria-hidden="true"></i></a></li>
+			</ul>
+    </div>
+
+	</header>
+  <div class="page-description page-about">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <h1 class="page-description__title">О нас</h1>
+        </div>
+      </div>
+      
+    </div>
+
+
+	<section class="section-page fix-section-padding-bottom">
+		<div class="container">
+			<div class="section-page_desc_wrap">
+				<h2 class="section-page_title">Наша миссия состоит в том, чтобы сделать лучшую пиццу,
+					которая будет питать все ваши чувства.</h2>
+				<p class="section-page_description">Мы предпочитаем полагаться на инстинкт и чувство, а не на стандартную
+					граммовку. Это истинный способ делать пиццу. Конечно, это немного необычно, но мы этим гордимся.</p>
+				<p class="section-page_description">Наша пицца, делает ваши встречи ярче, наполняя совим ароматом те случая,
+					когда вы встречаетесь с друзьями или семьей.</p>
+				<p class="section-page_description">И в самом деле, разве не в этом весь смысл? Потому что когда пицца питает
+					все ваши чувства и делает встречи ярчи, это ли не просто здорово!</p>
+			</div>
+			<div class="row advantages">
+				<div class="col-lg-4 col-12">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<i class="fa fa-leaf" aria-hidden="true"></i>
+						</div>
+						<h3 class="advantages__title">Мы осторожны</h3>
+						<p class="advantages__description">Тесто хранится в отдельном контейнере, на отдельной полке в нашем
+							холодильнике. Сыр, соус маринара и пепперони хранятся в специальном наборе, и каждая пицца свежеиспечена
+							на специальной пергаментной бумаге в наших печах.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-12">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+						</div>
+						<h3 class="advantages__title">Мы ответственны</h3>
+						<p class="advantages__description">Наши пиццы с сыром и пепперони, приготовленные исключительно из сыра и
+							пепперони, готовятся с использованием сертифицированных технологий (GIG, ISO), и при приготовлении этих
+							пицц мы проявляем особую осторожность.</p>
+					</div>
+				</div>
+				<div class="col-lg-4 col-12">
+					<div class="advantages__item">
+						<div class="advantages__icon">
+							<i class="fa fa-rocket" aria-hidden="true"></i>
+						</div>
+						<h3 class="advantages__title">Мы креативны</h3>
+						<p class="advantages__description">Мы всегда ищем что-то новое, и стараемся выбирать только лучшие рецепты,
+							чтобы донести до вас тот самый вкус пиццы, который и был изначально задуман тем или иным создателем
+							рецепта, ведь каждый рецепт и вкус особенен.</p>
+					</div>
+				</div>
+      </div>
+      <div class="row pb-5">
+        <div class="col-6">
+          <div class="advantages__title p-0">
+              Все наши продукты отражают желания наших клиентов, от классических рецептов пицц до инновационных этнических, восхитительно ароматных и, конечно, вкусных.
+          </div>
+        </div>
+        <div class="col-6">
+            <p class="advantages__description">С более чем 40 рецептами и большим количеством начинок, чем у любой другой пиццерии, наш выбор не имеет себе равных. Наше инновационное меню варьируется от базовых, таких как классические пепперони или ветчина и ананас, до оригинальных блюд для гурманов, таких как наше примо полло и вегетарианский жареный на гриле и козий сыр.</p>
+            <p class="advantages__description">Мы знаем, что лучшая пицца начинается с лучшего качества, свежих ингредиентов. Наши пепперони сушатся в сухом виде, наша моцарелла не содержит сычужных ферментов, наши морепродукты сертифицированы, и ни один из наших продуктов не содержит искусственных красителей и ароматизаторов. Благодаря обширному ассортименту превосходных начинок, четырём различных корочек и девяти пикантных соусов мы предлагаем выбор, который требуют наши потребители.</p>
+            </div>
+        </div>
+      </div>
+		</div>
+	</section>
+
+	<section class="list-progress">
+		<div class="container">
+			<div class="section-page_desc_wrap mb-5">
+				<h2 class="section-page_title">Множество видов!</h2>
+				<p class="section-page_description">Мы постоянно расширяем наше меню, комбинируя множество видов продуктов.</p>
+			</div>
+			<ul class="row justify-content-between">
+				<li class="col-xl-2 col-lg-4 col-6">
+					<div class="progress__count progress__item">
+						<span>3</span>
+					</div>
+					<h3 class="progress__title">Вида теста</h3>
+				</li>
+				<li class="col-xl-2 col-lg-4 col-6">
+					<div class="progress__count progress__item">
+						<span>14</span>
+					</div>
+					<h3 class="progress__title">Видов соуса</h3>
+				</li>
+				<li class="col-xl-2 col-lg-4 col-6">
+					<div class="progress__count progress__item">
+						<span>7</span>
+					</div>
+					<h3 class="progress__title">Видов сыра</h3>
+				</li>
+				<li class="col-xl-2 col-lg-4 col-6">
+					<div class="progress__count progress__item">
+						<span>9</span>
+					</div>
+					<h3 class="progress__title">Видов мяса</h3>
+				</li>
+				<li class="col-xl-2 col-lg-4 col-6">
+					<div class="progress__count progress__item">
+						<span>25</span>
+					</div>
+					<h3 class="progress__title">Видов овощей</h3>
+				</li>
+				<li class="col-xl-2 col-lg-4 col-6">
+					<div class="progress__count progress__item">
+						<span>7</span>
+					</div>
+					<h3 class="progress__title">Видов перца</h3>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="section-page">
+		<div class="container">
+			<div class="section-page_desc_wrap mb-5">
+				<h2 class="section-page_title">Вот что говорят некоторые клиенты...</h2>
+				<p class="section-page_description">Обслуживание клиентов и качество продукции являются нашим главным
+					приоритетом. Мы стремимся сделать для клиента всё как можно удобнее и лучше,и то как наши клиенты оценивают
+					нас, это то что действительно имеет значение.</p>
+			</div>
+			<ul class="row reviews">
+				<li class="col-4 reviews__item">
+					<div class="reviews__inner">
+						<div class="reviews__img">
+							<img src="img/slider-reviews_1.png" alt="">
+						</div>
+						<h2 class="reviews__title_product">Флорентийская Рикотта</h2>
+						<div class="reviews__content">
+							<p class="reviews__content__text">"Мега вкусное меню, приемлемые цены,вежливый персонал, отличная
+								атмосфера!”</p>
+						</div>
+						<h3 class="reviews__author">Анна Петрова</h3>
+					</div>
+				</li>
+				<li class="col-4 reviews__item">
+					<div class="reviews__inner">
+						<div class="reviews__img">
+							<img src="img/slider-reviews_2.png" alt="">
+						</div>
+						<h2 class="reviews__title_product">Чесночные Креветки</h2>
+						<div class="reviews__content">
+							<p class="reviews__content__text">"Быстрая доставка, внимательность колл-центра, приятный доставщик,
+								вкусная и горячая пицца”</p>
+						</div>
+						<h3 class="reviews__author">Василий Каряякин</h3>
+					</div>
+				</li>
+				<li class="col-4 reviews__item">
+					<div class="reviews__inner">
+						<div class="reviews__img">
+							<img src="img/slider-reviews_3.png" alt="">
+						</div>
+						<h2 class="reviews__title_product">Кимчи BBQ курица</h2>
+						<div class="reviews__content">
+							<p class="reviews__content__text">"Низкие цены Большой выбор блюд Быстрая доставка Большие порции Много
+								адресов по Краснодару”</p>
+						</div>
+						<h3 class="reviews__author">Мария Ивошина</h3>
+					</div>
+				</li>
+				<li class="col-4 reviews__item">
+					<div class="reviews__inner">
+						<div class="reviews__img">
+							<img src="img/slider-reviews_4.png" alt="">
+						</div>
+						<h2 class="reviews__title_product">Жареная свекла</h2>
+						<div class="reviews__content">
+							<p class="reviews__content__text">"Вкусно готовят, не дорого, уютная атмосфера, хорошее месторасположение,
+								отличная пицца!”</p>
+						</div>
+						<h3 class="reviews__author">Алла Юрьевна</h3>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="instagram">
+		<div class="container-fluid pl-0 pr-0">
+			<ul class="row no-gutters instagram__inner popup-gallery">
+				<li class="col instagram__item">
+					<a href="img/carousel/carusel_1.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_1.jpg" alt="">
+						</div>
+					</a>
+				</li>
+				<li class="col istagram__item">
+					<a href="img/carousel/carusel_2.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_2.jpg" alt="">
+						</div>
+					</a>
+				</li>
+				<li class="col instagram__item">
+					<a href="img/carousel/carusel_3.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_3.jpg" alt="">
+						</div>
+					</a>
+				</li>
+				<li class="col instagram__item">
+					<a href="img/carousel/carusel_4.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_4.jpg" alt="">
+						</div>
+					</a>
+				</li>
+				<li class="col instagram__item">
+					<a href="img/carousel/carusel_5.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_5.jpg" alt="">
+						</div>
+					</a>
+				</li>
+				<li class="col instagram__item">
+					<a href="img/carousel/carusel_6.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_6.jpg" alt="">
+						</div>
+					</a>
+				</li>
+				<li class="col instagram__item">
+					<a href="img/carousel/carusel_7.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_7.jpg" alt="">
+						</div>
+					</a>
+				</li>
+				<li class="col instagram__item">
+					<a href="img/carousel/carusel_8.jpg">
+						<div class="instagram__img">
+							<img src="img/carousel/carusel_8.jpg" alt="">
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="carousel__nav">
+				<div class="carousel__nav__title border-decoration">
+					<p>Следите за нами в Instagram: <span>@pizza_riya</span></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer-page">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<address class="footer-page__address">
+						<a href="tel:+79999999999" class="address__phone">+7 (999) 999-99-99</a>
+						<a href="mailto:example@exmaple.ru" class="address__mail">example@exmaple.ru</a>
+					</address>
+					<div class="footer-decor decor-2">&</div>
+					<ul class="social">
+						<li class="social__item"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+						<li class="social__item"><a href="https://vk.com/" target="_blank">Vkontakte</a></li>
+						<li class="social__item"><a href="https://www.facebook.com/" target="_blank">FaceBook</a></li>
+						<li class="social__item"><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+						<li class="social__item"><a href="https://www.pinterest.ru/" target="_blank">Pinterest</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="copyright">
+		<p>Copyright © 2020 Пицца Рия. Все права защищены.</p>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js//jquery.magnific-popup.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>

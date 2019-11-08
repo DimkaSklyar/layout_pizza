@@ -38,17 +38,15 @@ $(document).ready(function () {
 
   $('.menu').click(function (e) { 
     e.preventDefault();
-      $(".navigation__wrapper").toggleClass('show-menu');
-      $(".navigation__wrapper").focus();
-      $("body").toggleClass('bcg-opacity');
+    $("body").append('<div class="bcg-opacity"></div>');
+    $(".navigation__wrapper").addClass('show-menu');
   });
 
-  $(".navigation__wrapper").blur(function (e) { 
-    e.preventDefault();
-    $(".navigation__wrapper").toggleClass('show-menu');
-    $("body").toggleClass('bcg-opacity');
-  });
 
+  $(".navigation__wrapper > .close-btn-menu").click(function (e) { 
+    $(".navigation__wrapper").removeClass('show-menu');
+    $(".bcg-opacity").remove();
+  });
 
   $('[href="#order-popup"]').click(function (e) { 
     e.preventDefault();
@@ -60,10 +58,15 @@ $(document).ready(function () {
       $(".cart__wrapper").removeClass('show-order');
       $(".bcg-opacity-order").remove();
   });
+
+  $(document).on('click','.bcg-opacity',function(){
+    $(".navigation__wrapper").removeClass('show-menu');
+    $(".bcg-opacity").remove();
+});
+
 $(".cart__wrapper > .close-btn-menu").click(function (e) { 
   $(".cart__wrapper").removeClass('show-order');
   $(".bcg-opacity-order").remove();
-  
 });
 
   $('.slick-popular-product').slick();
@@ -179,4 +182,11 @@ $(".cart__wrapper > .close-btn-menu").click(function (e) {
       removalDelay: 300,
       mainClass: 'my-mfp-slide-bottom'
     });
+
+
+    var mixer = mixitup("#menu-shop", {
+      pagination: {
+          limit: 2 // impose a limit of 8 targets per page
+      }
+  });
 });

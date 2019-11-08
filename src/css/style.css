@@ -9158,5 +9158,15 @@ img.mfp-img {
   padding: 15px 5px;
 }
 
+.page-description__title {
+  font-size: 80px;
+  padding: 100px 0;
+}
+
+.page-about {
+  background: url("../img/bg-title_about.jpg") no-repeat 50% 0;
+  background-size: cover;
+}
+
 /*==========  Desktop First  ==========*/
 /*==========  Mobile First  ==========*/
