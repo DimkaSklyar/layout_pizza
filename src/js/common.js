@@ -186,7 +186,7 @@ $(".cart__wrapper > .close-btn-menu").click(function (e) {
 
     var mixer = mixitup("#menu-shop", {
       pagination: {
-          limit: 2 // impose a limit of 8 targets per page
+          limit: 8 // impose a limit of 8 targets per page
       }
   });
 });

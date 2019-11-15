@@ -244,6 +244,10 @@ ul
 		transition: .3s
 		border: 4px solid transparent
 		margin-bottom: 40px
+		height: 580px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
 		&:hover
 			border-color: #fdbc2c
 			& .btn-hover-show
@@ -770,4 +774,30 @@ img.mfp-img
 .page-about
 	background: url('../img/bg-title_about.jpg') no-repeat 50% 0
 	background-size: cover
+
+.mixitup-control
+	background: none
+	border: 4px solid #d94f2b
+	outline: none 0
+	width: 64px
+	height: 64px
+	color: #d94f2b
+	cursor: pointer
+	font-size: 30px
+	font-weight: bold
+	transition: .3s
+	&:hover
+		border-color: #fff
+		color: #fff
+
+.mixitup-control-disabled
+	border: 4px solid darken(#d94f2b,10)
+	color: darken(#d94f2b,10)
+
+.mixitup-control-active
+	border: 4px solid #d94f2b 
+	color: #d94f2b 
+	background: #fdbc2c
+
+
 @import "media" // Always at the end
