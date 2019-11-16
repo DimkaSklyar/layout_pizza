@@ -8410,6 +8410,12 @@ ul {
   justify-content: space-between;
 }
 
+@media (max-width: 991px) {
+  .menu-product__item {
+    height: auto;
+  }
+}
+
 .menu-product__item:hover {
   border-color: #fdbc2c;
 }
