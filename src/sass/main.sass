@@ -811,4 +811,88 @@ img.mfp-img
 		font-weight: bold
 		color: #d94f2b
 
+.page-contact
+	padding: 80px 0 0
+
+
+.address
+
+	&__item
+		display: flex
+		align-items: center
+		&:not(:last-child)
+			margin-bottom: 20px
+		a
+			color: #fff
+		.fa
+			color: $accent
+			font-size: 24px
+			margin-right: 10px
+
+	&-wrapper
+		
+		background-color: rgba(#000,.2)
+		padding: 25px 35px
+		height: 100%
+		border-radius: 20px
+		.social
+			padding-top: 0
+			margin-top: 0
+		.social__item
+			margin-right: 25px
+			transition: .3s
+			a
+				color: $accent
+			&:hover
+				transform: scale(1.2)
+		h2
+			font-size: 28px
+			font-family: 'Fira Sans',sans-serif
+			&:not(:first-child)
+				margin-top: 25px
+
+.map_wrapper
+	border-radius: 20px
+	overflow: hidden
+	iframe
+		border-radius: 20px
+
+.pay
+	display: flex
+	&__item
+		color: $accent
+		font-size: 28px
+		&:not(:last-child)
+			margin-right: 25px
+
+
+.section-header
+	font-family: 'Fira Sans',sans-serif
+	text-align: center
+	font-size: 45px
+	padding-bottom: 20px
+.feedback__wrapper
+	padding: 50px 0
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		height: 2px
+		bottom: 0
+		background-color: #d94f2b
+		width: 100%
+
+.feedback-form
+	.input-form
+		width: 100%
+		border: 2px solid #fff
+		background-color: transparent
+		padding: 10px 15px
+		margin-bottom: 15px
+		color: #fff
+		font-weight: 500
+		font-size: 18px
+	.btn
+		display: block
+		margin: 0 auto
 @import "media" // Always at the end
