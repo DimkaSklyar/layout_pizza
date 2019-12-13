@@ -835,12 +835,19 @@ img.mfp-img
 		padding: 25px 35px
 		height: 100%
 		border-radius: 20px
+		+media-breakpoint-down(md)
+			margin-top: 30px
 		.social
 			padding-top: 0
 			margin-top: 0
+			+media-breakpoint-down(md)
+				flex-direction: row
 		.social__item
 			margin-right: 25px
 			transition: .3s
+			&:not(:last-child)
+				+media-breakpoint-down(md)
+					margin-bottom: 0
 			a
 				color: $accent
 			&:hover
