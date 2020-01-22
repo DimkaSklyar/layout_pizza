@@ -9174,6 +9174,12 @@ img.mfp-img {
   text-align: center;
 }
 
+@media (max-width: 991px) {
+  .page-description__title {
+    font-size: 50px;
+  }
+}
+
 .page-about {
   background: url("../img/bg-title_about.jpg") no-repeat 50% 0;
   background-size: cover;
@@ -9335,6 +9341,12 @@ img.mfp-img {
   bottom: 0;
   background-color: #d94f2b;
   width: 100%;
+}
+
+@media (max-width: 991px) {
+  .feedback-form {
+    padding: 0 15px;
+  }
 }
 
 .feedback-form .input-form {
