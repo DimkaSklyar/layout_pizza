@@ -8199,6 +8199,12 @@ ul {
   align-self: center;
 }
 
+@media (max-width: 1199px) {
+  .header .logo_img img {
+    width: 60%;
+  }
+}
+
 .header .menu {
   background-color: #000;
   height: 100%;
