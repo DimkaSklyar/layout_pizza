@@ -150,12 +150,13 @@
             <h2 class="section-header">Обратная связь</h2>
             <div class="row no-gutters">
               <div class="col-lg-8 offset-lg-2 col-12 offset-0">
-                <form action="" class="feedback-form">
-                  <input type="text" class="input-form" placeholder="Имя">
-                  <input type="email" class="input-form" placeholder="e-mail">
-                  <textarea name="" id="" cols="30" rows="7" class="input-form textarea-form" placeholder="Сообщение..."></textarea>
-                  <button type="submit" class="btn btn_transparent">Отправить</button>
+                <form class="feedback-form" id="form-feedback">
+                  <input type="text" class="input-form" placeholder="Имя" id="name-feedback">
+                  <input type="email" class="input-form" placeholder="e-mail" id="email-feedback">
+                  <textarea name="comment" id="comment-feedback" cols="30" rows="7" class="input-form textarea-form" placeholder="Сообщение..."></textarea>
+                  <button type="submit" form="form-feedback" class="btn btn_transparent">Отправить</button>
                 </form>
+                <div id="messegeResult-feedback" class="tac"></div>
               </div>
             </div>
         </div>

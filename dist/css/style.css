@@ -8195,6 +8195,10 @@ ul {
   border-color: #000;
 }
 
+.tac {
+  text-align: center;
+}
+
 .slider__item {
   background-image: url("../img/slider.jpg");
   height: 110vh;

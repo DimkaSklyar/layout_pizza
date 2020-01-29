@@ -33,6 +33,11 @@ $('#form-orderes').submit(function (e) {
   AjaxFormRequest('messegeResult-order', 'form-orderes', './order.php');
 });
 
+$('#form-feedback').submit(function (e) {
+  e.preventDefault();
+  AjaxFormRequest('messegeResult-feedback', 'form-feedback', './feedback.php');
+});
+
 
 $(document).ready(function () {
 
@@ -183,10 +188,12 @@ $(".cart__wrapper > .close-btn-menu").click(function (e) {
       mainClass: 'my-mfp-slide-bottom'
     });
 
-
-    var mixer = mixitup("#menu-shop", {
-      pagination: {
-          limit: 8 // impose a limit of 8 targets per page
-      }
-  });
+    if ($("#menu-shop").length) {
+      var mixer = mixitup("#menu-shop", {
+        pagination: {
+            limit: 8 // impose a limit of 8 targets per page
+        }
+    });
+    }
 });
+
